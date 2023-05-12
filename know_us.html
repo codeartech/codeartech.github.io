@@ -7,127 +7,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    css     -->
     <link rel="stylesheet" href="css/know_us.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/mode_dark_light.css">
     <!--    fonts   -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/75770889d9.js" crossorigin="anonymous"></script>
-    <title>know us</title>
+    <!--    js      defer   -->
+    <script src="js/theme.js" type="text/javascript" defer></script>
+    <title>know flexbox</title>
 </head>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <h1>CODEAR</h1>
-        </header>
-        <main class="contein cards">
-            <div class="card-1">
-                <div class="image">
-					<img src="assets/imgs/photo_Luz.png" alt="Luz_Toconas">
-				</div>
-				<h1 class="name">Luz Toconas</h1>
-				<h2 class="myjob">Graphic Designer</h2>
-				<p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro incidunt amet vel quisquam optio commodi aperiam eligendi.
-				</p>
-				<div class="icons">
-					<a href=""><i class="fa fa-facebook"></i></a>
-					<a href=""><i class="fa fa-instagram"></i></a>
-					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-linkedin"></i></a>
-				</div>
+<body class="contenedor">
+    <!-- Encabezado o Header -->
+    <header class="header">
+
+    </header>
+
+    <main class="contein contein-cards">
+        <div class="card card-1">
+            <img src="assets/imgs/photo_Gimena.jpg" alt="photo_Gimena" class="img" title="Gimena Riveros">
+            <h3 class="myname">Gimena</h3>
+            <h4 class="myjob">CEO & Backend Developer</h4>
+            <p class="about">Soy FullStack Developer con orientación al Backend. Me gusta estar a la vanguardia de este
+                mundo tecnológico, así que me mantengo actualizada de las novedades de este mundo tecno.
+            </p>
+            <p class="about">Disfruto de hacer nuevas amistades y pasar tiempo en mis hobbys <a
+                    href="https://cults3d.com/en/users/DesignHouse3D/creations" target="_blank"
+                    rel="noopener noreferrer">disegno 3D</a>, armar rompecabezas, escribir en mi blog
+                <a href="#">Code&Pizza</a> y la buena música compartiendo con amigos un buen café conversando acerca de
+                todo.
+            </p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/gimena.start.up?igshid=YmMyMTA2M2Y=" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Gimena-Riveros" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github"></i>
+                </a>
             </div>
-            <!--    CONTETIDO   SEGUNDO      -->
-            <div class="card-2">
-                <div class="image">
-					<img src="assets/imgs/photo_Mariano.jpg" alt="Mariano_Oviedo">
-				</div>
-				<h1 class="name">Mariano Oviedo</h1>
-				<h2 class="myjob">Web Developer</h2>
-				<p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro incidunt amet vel quisquam optio commodi aperiam eligendi.
-				</p>
-				<div class="icons">
-					<a href=""><i class="fa fa-facebook"></i></a>
-					<a href=""><i class="fa fa-instagram"></i></a>
-					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-linkedin"></i></a>
-				</div>
-            </div>
-            <!--    CONTETIDO   TERCERO      -->
-            <div class="card-3">
-                <div class="image">
-					<img src="assets/imgs/photo_Vanina.jpg" alt="Vanina_Fernandez">
-				</div>
-				<h1>Vanina Fernandez</h1>
-				<h2>App Developer</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro incidunt amet vel quisquam optio commodi aperiam eligendi.
-				</p>
-				<div class="icons">
-					<a href=""><i class="fa fa-facebook"></i></a>
-					<a href=""><i class="fa fa-instagram"></i></a>
-					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-linkedin"></i></a>
-				</div>
-            </div>
-            <!--    CONTETIDO   CUARTO      -->
-            <div class="card-4">
-                <div class="image">
-					<img src="assets/imgs/photo_Gimena.jpg" alt="Gimena_Riveros">
-				</div>
-				<h1>Gimena Riveros</h1>
-				<h2>CEO & Backend Developer</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro incidunt amet vel quisquam optio commodi aperiam eligendi.
-				</p>
-				<div class="icons">
-					<a href=""><i class="fa fa-github"></i></a>
-					<a href=""><i class="fa fa-instagram"></i></a>
-					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-linkedin"></i></a>
-				</div>
-            </div>
-        </main>
-        <!--    contact     form    -->
-        <div class="codear-info">
-            <h2><span>CodeAr</span>Tech</h2>
-            <ul>
-                <li><i class="fa-solid fa-road"></i> Junto al lago, Cordoba</li>
-                <li><i class="fa-brands fa-whatsapp fa-lg"></i> (+54) 9 11 555-5555</li>
-                <li><i class="fa-solid fa-envelope"></i> codear-info@email.com</li>
-            </ul>
         </div>
-        <div class="contact">
-            <h3>Contact us</h3>
-            <form>
-                <p>
-                    <label>NAME</label>
-                    <input type="text" name="name" required placeholder="n a m e . . .">
-                </p>
-                <p>
-                    <label>COMPANY</label>
-                    <input type="text" name="company" required placeholder="c o m p a n y . . .">
-                </p>
-                <p>
-                    <label>EMAIL</label>
-                    <input type="email" name="email" required placeholder="e m a i l . . .">
-                </p>
-                <p>
-                    <label>PHONE NUMBER</label>
-                    <input type="text" name="phone" placeholder="p h o n e . . .">
-                </p>
-                <p class="full">
-                    <label>MESSAGE</label>
-                    <textarea name="message" cols="5" required placeholder="m e s s a g e . . ."></textarea>
-                </p>
-                <p class="full">
-                    <button type="submit">Submit</button>
-                </p>
-            </form>
+        <div class="card card-2">
+            <img src="assets/imgs/photo_Vanina.jpg" alt="photo_Vanina" class="img" title="Vanina_Fernandez">
+            <h3 class="myname">Vanina</h3>
+            <h4 class="myjob">App Developer</h4>
+            <p class="about">Amo pasar las horas rompiendo código, haciendo música o desarmando operaciones matemáticas.
+                En el fondo, los tres se parecen bastante. Obsesiva por la prolijidad de las cosas que se ven. No
+                concibo la idea de parar de aprender.
+            </p>
+            <div class="icons">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/vany_icaro/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://github.com/vany-fernandez" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
         </div>
-        <!--    contact     form    -->
-        <footer class="footer">
-            <h3>FOOTER</h3>
-            <h4>Todos los derechos reservados</h4>
-        </footer>
+        <div class="card card-3">
+            <img src="assets/imgs/photo_Mariano.jpeg" alt="photo_Mariano" class="img" title="Mariano Oviedo">
+            <h3 class="myname">Mariano</h3>
+            <h4 class="myjob">Web Developer</h4>
+            <p class="about">Soy FullStack Developer con preferencia en orientación Frontend. Amante de la tecnología y
+                del deporte. Medio tiempo en Sistemas, medio tiempo en Salud.
+            </p>
+            <div class="icons">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/marianogabriel10/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://github.com/marianoviedo6" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="card card-4">
+            <img src="assets/imgs/photo_Luz.png" alt="photo_Luz" class="img" title="Luz Toconás">
+            <h3 class="myname">Luz</h3>
+            <h4 class="myjob">Graphic Designer</h4>
+            <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia necessitatibus
+                possimus fugit culpa, adipisci laboriosam?
+            </p>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero?</p>
+            <div class="icons">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!--    contact     form    -->
+    <div class="codear-info">
+        <h2><span>CodeAr</span>Tech</h2>
+        <ul>
+            <li><i class="fa-solid fa-road"></i><i> Junto al lago, Cordoba</i></li>
+            <li><i class="fa-brands fa-whatsapp fa-lg"></i><i> (+54) 9 11 555-5555</i></li>
+            <li><i class="fa-solid fa-envelope"></i> <i>codear-info@email.com</i></li>
+        </ul>
     </div>
+
+
+    <div class="contact">
+        <h3>Contact us</h3>
+        <br>
+        <form>
+            <p>
+                <label><i>NAME</i></label>
+                <input type="text" name="name" required placeholder="n a m e . . .">
+            </p>
+            <p>
+                <label><i>COMPANY</i></label>
+                <input type="text" name="company" required placeholder="c o m p a n y . . .">
+            </p>
+            <p>
+                <label><i>EMAIL</i></label>
+                <input type="email" name="email" required placeholder="e m a i l . . .">
+            </p>
+            <p>
+                <label><i>PHONE NUMBER</i></label>
+                <input type="text" name="phone" placeholder="p h o n e . . .">
+            </p>
+            <p class="full">
+                <label><i>MESSAGE</i></label>
+                <textarea name="message" cols="5" required placeholder="m e s s a g e . . ."></textarea>
+            </p>
+            <p class="full">
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </div>
+
+    <!--    contact     form    -->
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
 <!--
+    Thanks to 
+    <a href="https://www.flaticon.com/free-icons/triquetra" title="triquetra icons">Triquetra icons created by Freepik - Flaticon</a>
 -->

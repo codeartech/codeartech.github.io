@@ -1,79 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  links -->
-    <link rel="stylesheet" href="css/style.css">
-    <!--  fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
-    <title>codeartech</title>
+    <!--    css     -->
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/mode_dark_light.css">
+    <!--    fonts   -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75770889d9.js" crossorigin="anonymous"></script>
+    <!--    js      defer   -->
+    <script src="js/theme.js" type="text/javascript" defer></script>
+    <title>CodearTech - Home</title>
 </head>
+
 <body>
-    <header class="header container">
-        <div>
-            <h1 class="h1"><a href="#" title="codeartech" class="a">CodeArTech</a></h1>
-        </div>
-        <div>
-            <nav class="nav">
-                <ul class="ul">
-                    <li class="li"><a href="#conocenos" class="a">conocenos</a></li>
-                    <li class="li"><a href="#casosexito" class="a">casos de exito</a></li>
-                    <li class="li"><a href="#trabajemosjuntos" class="a">trabajemos juntos</a></li>
-                    <li class="li"><a href="#contactanos" class="a">contáctanos</a></li>
-                    <li class="li"><a href="#" class="a"></a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="langWrap">
-			<a href="#" language='english' class="active">EN</a>
-			<a href="#" language='spanish'>ES</a>
-			<a href="#" language='italian'>IT</a>
-		</div>
-    </header>  
+    <div class="contenedor">
 
-    <main class="main">
-        <section class="section" id="conocenos">
-            <h2 class="h2 knowUs">KNOW US</h2>
-            <h3 class="h3 potential">we raise your potential</h3>
-            <div class="content">
-                <h2 class="title">Hello World, the first program for every developer</h2>
-                <p class="description">For all those people who enter the world of programming or have a first contact with it, our first great achievement is to print a \"Hello World!\" or \"Hello World!\" on our screen. 
-                <br>
-                This can be defined as the first program for every developer and we even continue to use it as the initial test for every new project. <br>
-                However, the history or why of the origin of the famous \"Hello World\" is somewhat uncertain, we can affirm that its first invocation dates back to the 70s where Brian Kernighan, author of one of the most famous programming books in the history: C Programming Language (1978) and previously, in 1973 a book called A Tutorial Introduction to the Programming Language B, first introduced the example of the famous Hello World.</p>
+        <!-- Encabezado o Header -->
+        <header class="header">
+
+        </header>
+
+        <main class="section">
+
+            <!--    1) QUé valores aportamos      -->
+            <div class="section-1">
+                <h1>Listo para un nuevo desafio?</h1>
+                <!-- <h2>elevamos tu potencial. . .</h2><br><br> -->
+                <p><b> Hablanos y hacenos saber como podemos ayudarte . . .</b></p>
+                <p> <b>Nuestros especialistas se pondran en contacto para intercambiar ideas.</b></p>
             </div>
-            <img src="assets/imgs/triqueta_01.png" alt="triqueta_01">
-        </section>
 
-        <section class="section" id="casosexito">
-            <h2 class="h2">CASOS DE EXITO</h2>
-            <h3 class="h3">elevamos tu potencial</h3>
-            <img src="assets/imgs/triqueta_02.webp" alt="triqueta_02">
-        </section>
+            <!--    contact     form    -->
+            <div class=" section-2 codear-info">
+                <h2><span>CodeAr</span>Tech</h2>
+                <ul>
+                    <li><i class="fa-solid fa-road"></i><i> Junto al lago, Cordoba</i></li>
+                    <li><i class="fa-brands fa-whatsapp fa-lg"></i><i> (+54) 9 11 555-5555</i></li>
+                    <li><i class="fa-solid fa-envelope"></i> <i>codear-info@email.com</i></li>
+                </ul>
+            </div>
 
-        <section class="section" id="trabajemosjuntos">
-            <h2 class="h2">TRABAJEMOS JUNTOS</h2>
-            <h3 class="h3">elevamos tu potencial</h3>
-            <img src="assets/imgs/triqueta_03.jpg" alt="triqueta_03">
-        </section>
+            <div class="section-3 contact">
+                <h3>Contact us</h3>
+                <br>
+                <form>
+                    <p>
+                        <label><i>NAME</i></label>
+                        <input type="text" name="name" required placeholder="n a m e . . .">
+                    </p>
+                    <p>
+                        <label><i>COMPANY</i></label>
+                        <input type="text" name="company" required placeholder="c o m p a n y . . .">
+                    </p>
+                    <p>
+                        <label><i>EMAIL</i></label>
+                        <input type="email" name="email" required placeholder="e m a i l . . .">
+                    </p>
+                    <p>
+                        <label><i>PHONE NUMBER</i></label>
+                        <input type="text" name="phone" placeholder="p h o n e . . .">
+                    </p>
+                    <p class="full">
+                        <label><i>MESSAGE</i></label>
+                        <textarea name="message" cols="5" required placeholder="m e s s a g e . . ."></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
 
-        <section class="section" id="contactanos">
-            <h2 class="h2">CONTACTENOS</h2>
-            <h3 class="h3">elevamos tu potencial</h3>
-            <img src="assets/imgs/triqueta_04.jpg" alt="triqueta_04">
-        </section>
+        </main>
+        <!--    contact     form    -->
+        <div class="codear-info">
+            <h2><span>CodeAr</span>Tech</h2>
+            <ul>
+                <li><i class="fa-solid fa-road"></i><i> Junto al lago, Cordoba</i></li>
+                <li><i class="fa-brands fa-whatsapp fa-lg"></i><i> (+54) 9 11 555-5555</i></li>
+                <li><i class="fa-solid fa-envelope"></i> <i>codear-info@email.com</i></li>
+            </ul>
+        </div>
 
-        <section class="section" id="up">
-            <a href="#"><h2 class="h2">UP</h2></a>
-            <h3 class="h3">elevamos tu potencial</h3>
-        </section>
-    </main>
-    <footer>
-        <h4>CodeArTech</h4>
-        
-    </footer>
-    <script src="js/db.js"></script>
+        <div class="contact">
+            <h3>Contact us</h3>
+            <br>
+            <form>
+                <p>
+                    <label><i>NAME</i></label>
+                    <input type="text" name="name" required placeholder="n a m e . . .">
+                </p>
+                <p>
+                    <label><i>COMPANY</i></label>
+                    <input type="text" name="company" required placeholder="c o m p a n y . . .">
+                </p>
+                <p>
+                    <label><i>EMAIL</i></label>
+                    <input type="email" name="email" required placeholder="e m a i l . . .">
+                </p>
+                <p>
+                    <label><i>PHONE NUMBER</i></label>
+                    <input type="text" name="phone" placeholder="p h o n e . . .">
+                </p>
+                <p class="full">
+                    <label><i>MESSAGE</i></label>
+                    <textarea name="message" cols="5" required placeholder="m e s s a g e . . ."></textarea>
+                </p>
+                <p class="full">
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+
+        <!--    contact     form    -->
+
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
