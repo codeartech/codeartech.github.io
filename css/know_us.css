@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background: rgb(230,230,230);
+    background: var(--background);
     color: #000;
     font-family: 'Roboto', sans-serif;
 }
@@ -103,7 +103,7 @@ main {
 .card-2, 
 .card-3, 
 .card-4 {
-    background-color: var(--background-main);/* #4db6ac; */
+    background-color: var(--background-card_us);/* #4db6ac; */
     row-gap: 10px; /* gap en filas entre los elementos dentro de cada card individual  */
 }
 .card-1:hover, 
@@ -138,7 +138,7 @@ main {
 }
 
 .fa {
-    background-color: rgb(73, 73, 225);
+    background-color: var(--background-redes);/* rgb(73, 73, 225);*/
     color: beige;
     padding: 10px 15px;
     border-radius: 100px;
@@ -237,94 +237,38 @@ main {
 
 
 /******************
-    Media Queeries
+    Media  Queeries
 *******************/
 
 /* Diseño responsive para tablets (landscape) */
-@media screen and (max-width: 800px){
-    .contenedor{
+@media screen and (max-width: 800px) {
+    .contenedor {
         grid-template-areas: "header header header"
-                             "section section section"
-                             "codear-info codear-info codear-info"
-                             "contact contact contact"
-                             "footer footer footer";
+            "contein contein contein"
+            "codear-info codear-info codear-info"
+            "contact contact contact"
+            "footer footer footer";
     }
 
 
+    /* Pasé todo lo relativo a header y footer a header_footer.css */
+  
 
-    .abrir, .cerrar{
-        display: block;
-        border: 0;
-        font-size: 1.24rem;
-        background-color: transparent;
-        cursor: pointer;
-       }
-
-
-    .nav{
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: rgb(1, 26, 48);
-        border-radius: 5px;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-
-    .nav.visible{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list{
-        flex-direction: column;
-        align-items: end;
-        border-bottom: solid 4px rgba(37, 36, 36, 0.151);
-        border-right: solid 2px rgba(37, 36, 36, 0.151);
-    }
-
-    .nav-list li{
-        border-bottom: solid 4px rgba(138, 135, 135, 0.151);
-        border-right: solid 2px rgba(138, 135, 135, 0.151);
-    }
-
-    .nav-list li a{
-        color: #ecececec;
-
-    }
-
-    .footer{
-        grid-template-columns: auto;
-        grid-template-areas:'brand copyright copyright valor'
-                            'brand copyright copyright casos'
-                            'conocenos contactanos redes redes';
-    }
-
-    .footer_img{
-        border-bottom: solid 4px rgba(37, 36, 36, 0.151);
-    }
-
-    .conocenos, .contactanos{
+    .conocenos,
+    .contactanos {
         padding: 16px;
     }
-    }
-
+}
 
 
 /* Diseño responsive para celulares (landscape) y tablets (portrait) */
-@media screen and (max-width: 600px){
-    .contenedor{
+@media screen and (max-width: 600px) {
+    .contenedor {
         grid-template-areas: "header header header"
-                             "section section section"
-                             "codear-info codear-info codear-info"
-                             "contact contact contact"
-                             "footer footer footer";
+            "contein contein contein"
+            "codear-info codear-info codear-info"
+            "contact contact contact"
+            "footer footer footer";
         grid-gap: 20px;
     }
 
@@ -334,53 +278,27 @@ main {
         letter-spacing: 3px;
     }
 
-    form p{
+    form p {
         display: grid;
         grid-column: 1/3;
     }
 
-    .footer{
-        grid-template-areas:'brand brand copyright copyright'
-                            'valor casos conocenos contactanos'
-                            'redes redes redes redes';
-    }
+    /* Pasé todo lo relativo a header y footer a header_footer.css */
 
-    .redes{
-        text-align: center;
-    }
-
-    .casos, .valor, .conocenos, .contactanos{
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        min-height: 3rem;
-    }
-
-    .copyright{
-        padding: 5;
-    }
 }
 
 
 
 
 /* Diseño responsive para celulares (portrait) */
-@media screen and (max-width: 400px){
-    .contenedor{
+@media screen and (max-width: 400px) {
+    .contenedor {
         grid-template-areas: "header header header"
-                             "section section section"
-                             "codear-info codear-info codear-info"
-                             "contact contact contact"
-                             "footer footer footer";
+            "contein contein contein"
+            "codear-info codear-info codear-info"
+            "contact contact contact"
+            "footer footer footer";
         grid-gap: 20px;
-    }
-
-    .footer{
-        grid-template-areas: 'brand brand brand brand'
-                            'copyright copyright copyright copyright'
-                            'valor valor casos casos'
-                            'conocenos conocenos contactanos contactanos'
-                            'redes redes redes redes';
     }
 
     .codear-info {
@@ -388,27 +306,4 @@ main {
         grid-area: codear-info;
         letter-spacing: 3px;
     }
-
-    footer img{
-        height: 70px;
-    }
-
-    .footer_img{
-        border: 0;
-    }
-
-   .footer div{
-        height: min-content;
-
-    }
-
-    .copyright{
-        text-align: center;
-        padding: 0;
-    }
-
-    .conocenos, .contactanos, .casos, .valor{
-        padding: 5px;
-    }
-
 }

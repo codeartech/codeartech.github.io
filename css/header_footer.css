@@ -18,6 +18,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    /* z-index: 101; */
 }
 
 .img {
@@ -25,7 +26,8 @@ header {
 }
 
 .abrir,
-.cerrar {
+.cerrar,
+.nav-list li:first-child{
     display: none;
 }
 
@@ -238,32 +240,45 @@ footer a {
     }
 
 
-    .nav {
+    .nav{
         opacity: 0;
         visibility: hidden;
+        justify-content: center;
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
         gap: 1rem;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
-        background-color: rgb(1, 26, 48);
+        left: 0;
+        bottom: 0;
+        background-color: var(--background-nav);
         border-radius: 5px;
         padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        z-index: 100;
     }
 
-    .nav.visible {
+    .nav-list li:first-child{
+        display: flex;
+        width: 5em;
+        justify-content: center;
+    }
+
+    .nav.visible{
         opacity: 1;
         visibility: visible;
     }
 
-    .nav-list {
+    .nav-list{
         flex-direction: column;
-        align-items: end;
-        border-bottom: solid 4px rgba(37, 36, 36, 0.151);
-        border-right: solid 2px rgba(37, 36, 36, 0.151);
+        align-items: center;
+    }
+
+    .cerrar i{
+        position: absolute;
+        top: 3rem;
+        right: 37%;
     }
 
     .nav-list li {
@@ -302,18 +317,18 @@ footer a {
         text-align: center;
     }
 
-    .casos,
-    .valor,
-    .conocenos,
-    .contactanos {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        min-height: 3rem;
-    }
-
     .copyright {
         padding: 5;
+    }
+
+    .footer .conocenos,
+    .footer .contactanos,
+    .footer .casos,
+    .footer .valor {
+        min-height: 25px;
+        padding: 0;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -339,18 +354,21 @@ footer a {
 
     .footer div {
         height: min-content;
-
     }
 
-    .copyright {
+    .footer .copyright,
+    .footer .conocenos,
+    .footer .contactanos,
+    .footer .casos,
+    .footer .valor {
+        min-height: 0;
+        padding: 10px;
+        align-items: center;
+        
+    }
+    
+    .footer .copyright {
         text-align: center;
         padding: 0;
-    }
-
-    .conocenos,
-    .contactanos,
-    .casos,
-    .valor {
-        padding: 5px;
     }
 }

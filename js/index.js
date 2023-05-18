@@ -49,7 +49,6 @@ punto.forEach( ( cadaPunto , i )=> {
     })
 })
 
-
 //  section  3  bis  brands clientes.
 var slideIndex = 1;
 showSlides(slideIndex);

@@ -1,0 +1,107 @@
+main {
+    display: grid;
+    font-family: sans-serif;
+    height: 100vh;
+    grid-gap: 10px;
+
+    /* Especificar posición de las areas */
+    grid-template-areas:
+        "header"
+        "contenido"
+        "izquierda"
+        "derecha"
+        "footer";
+}
+
+main > * {
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive */
+@media (min-width: 400px) {
+    main {
+        grid-template-areas:
+            "header header derecha"
+            "izquierda contenido derecha"
+            "izquierda footer derecha";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr;
+    }
+    section {
+        display: grid;
+        grid-gap: 3px;
+        grid-template-areas:
+            ". card-1 card-2"
+            ". card-3 card-4"
+            ". . .";
+    }
+}
+
+/* Nombrar las areas */
+header {
+    grid-area: header;
+}
+
+aside:first-of-type {
+    grid-area: izquierda;
+}
+
+section {
+    grid-area: contenido;
+}
+
+aside:last-of-type {
+    grid-area: derecha;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.card-1 {
+    grid-area: card-1;
+    background: lightcoral;
+} 
+.card-1 .name .myjob .about {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-2 {
+    grid-area: card-2;
+    background: lightcoral;
+}
+
+.card-3 {
+    grid-area: card-3;
+    background: lightcoral;
+}
+
+.card-4 {
+    grid-area: card-4;
+    background: lightcoral;
+}
+.card-1 .name {
+    background: lightseagreen;
+}
+.card-1 .myjob {
+    background-color: lightseagreen;
+}
+.card-1 .about {
+    background-color: lightseagreen;
+}
+.card-1 .icons {
+    justify-content: center;
+}
+.card-1 .icon-1 {
+    background-color: lightseagreen;
+}
+.card-1 .icon-2 {
+    background-color: lightseagreen;
+}
+.card-1 .icon-3 {
+    background-color: lightseagreen;
+}
