@@ -24,11 +24,11 @@ header.innerHTML = `
     <i class="fa-solid fa-xmark" style="color: #e3eaf4;"></i>
 </button>
 <ul class="nav-list">
-    <li id="myLinks"><a href="index.html"><i>Home</i></a></li>
-    <li id="myLinks"><a href="know_us.html"><i>Conocenos</i></a></li>
-    <li id="myLinks"><a href="success_stories.html"><i>Casos de éxito</i></a></li>
-    <li id="myLinks"><a href="contact_us.html"><i>Contactanos</i></a></li>
-    <li id="myLinks"><a href=""><i>Codeemos</i></a></li>
+    <li id="myLinks"><a href="index.html"><i>CODEAR</i></a></li>
+    <li id="myLinks"><a href="know_us.html"><i>CONOCENOS</i></a></li>
+    <li id="myLinks"><a href="success_stories.html"><i>CASOS</i></a></li>
+    <li id="myLinks"><a href="contact_us.html"><i>CONTACTANOS</i></a></li>
+    <li id="myLinks"><a href="codeemos.html"><i>CODEEMOS</i></a></li>
 </ul>
 </nav>
 <!--  BUTTON  UP  -->

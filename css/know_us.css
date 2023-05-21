@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +8,7 @@
 body{
     background: var(--background);
     color: #000;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* **************** 
@@ -128,12 +131,15 @@ main {
 }
 
 .myname {
+    color: var(--title);
     margin: 10px 0 15px;
 }
 .myjob {
+    color: var(--sub-title);
     margin: 10px 0 15px;
 }
 .about {
+    color: var(--text-p);
     margin-bottom: 20px;
 }
 
@@ -235,7 +241,6 @@ main {
 
 /*  FIN     contact     form    */
 
-
 /******************
     Media  Queeries
 *******************/
@@ -248,11 +253,18 @@ main {
             "codear-info codear-info codear-info"
             "contact contact contact"
             "footer footer footer";
+            gap: 0;
     }
 
-
     /* Pasé todo lo relativo a header y footer a header_footer.css */
-  
+
+    .codear-info{
+        margin-bottom: 0;
+    }
+
+    .contact{   
+        margin-top: 0;
+    }
 
     .conocenos,
     .contactanos {
@@ -269,7 +281,25 @@ main {
             "codear-info codear-info codear-info"
             "contact contact contact"
             "footer footer footer";
-        grid-gap: 20px;
+        /* grid-gap: 20px; */
+    }
+
+
+    .contenedor .section-1 h1{
+        font-size: 3em;
+    }
+
+    .nombreseccion a {
+        text-decoration: none;
+        color: white;
+        letter-spacing: 0;
+        background-color: #7171718a;
+        border-radius: 5px;
+    }
+
+    .contenedor .section-4 .slider-block::before,
+    .contenedor .section-4 .slider-block::after {
+        width: 70px;
     }
 
     .codear-info {
@@ -298,11 +328,38 @@ main {
             "codear-info codear-info codear-info"
             "contact contact contact"
             "footer footer footer";
-        grid-gap: 20px;
+        /* grid-gap: 20px; */
     }
 
+    .contenedor .section-1{
+        padding: 15px;
+    }
+
+    .contenedor .section-1 h1{
+        font-size: 2rem;
+    }
+
+
+    .contenedor .section-1 p,
+    .contenedor .section-1 h2,
+    .contenedor .section-1 h3{
+        font-size: larger;
+    }
+
+    .contenedor .carrousel{
+        padding: 20px 5px;
+    }
+
+    .carrousel .grande{
+        align-items: baseline;
+    }
+
+    .carrousel h1,
+    .contenedor .section-4 h1{
+        font-size: 1.5rem;
+}
+
     .codear-info {
-        background: rgb(97, 177, 243);
         grid-area: codear-info;
         letter-spacing: 3px;
     }

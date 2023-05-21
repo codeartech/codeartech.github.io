@@ -1,4 +1,3 @@
-
 //MENU HAMBURGUESA//
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
@@ -48,6 +47,7 @@ punto.forEach( ( cadaPunto , i )=> {
 
     })
 })
+
 
 //  section  3  bis  brands clientes.
 var slideIndex = 1;
